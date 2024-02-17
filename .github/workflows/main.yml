@@ -16,6 +16,7 @@ on:
         default: 'LineageOS 20.0'
         type: choice
         options:
+          - 'EvolutionX 14.0'
           - 'LineageOS 20.0'
           - 'crDroid 14.0'
           - 'ArrowOS 13.1'
@@ -115,6 +116,9 @@ jobs:
           ;;
           "DerpFest 13.0")
             repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 13 --depth=1
+          ;;
+          "EvolutionX 14.0")
+            repo init -u https://github.com/Evolution-X/manifest -b udc --git-lfs --depth=1
           ;;
           "crDroid 14.0")
             repo init -u https://github.com/crdroidandroid/android.git -b 14.0 --git-lfs --depth=1
